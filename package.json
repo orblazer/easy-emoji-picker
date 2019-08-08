@@ -1,6 +1,7 @@
 {
   "name": "easy-emoji-picker",
   "description": "This is an easy emoji picker",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
