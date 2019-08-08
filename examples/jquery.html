@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Easy emoji picker</title>
+
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="emojiPicker">
+      <textarea style="width: 100%" id="textarea" rows="10"></textarea>
+      <input
+        class="emojiPicker__picker"
+        type="button"
+        id="emojiPicker"
+        value="😁"
+      />
+    </div>
+
+    <div class="emojiPicker">
+      <textarea style="width: 100%" id="textarea1" rows="10"></textarea>
+      <input
+        class="emojiPicker__picker"
+        type="button"
+        id="emojiPicker1"
+        value="😁"
+      />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script>
+    (function ($) {
+      $('.emojiPicker__picker').each(function (index, element) {
+        $(element).easyEmojiPicker($(element).parent().children('textarea'))
+      })
+    }(jQuery))
+    </script>
+  </body>
+</html>
